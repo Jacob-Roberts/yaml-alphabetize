@@ -15,7 +15,7 @@
     "url": "https://github.com/Jacob-Roberts/yaml-alphabetize.git",
     "type": "git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "commander": "^11.0.0",
     "js-yaml": "^4.1.0"
