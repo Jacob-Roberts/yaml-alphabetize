@@ -1,0 +1,16 @@
+{
+  "name": "yaml-alphabetize",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Alphabetically sort a section of YAML",
+  "main": "index.js",
+  "bin": {
+    "yaml-alphabetize": "./index.js"
+  },
+  "author": "jrob",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}
