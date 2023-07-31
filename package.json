@@ -3,11 +3,18 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Alphabetically sort a section of YAML",
-  "main": "index.js",
   "bin": {
     "yaml-alphabetize": "./index.js"
   },
-  "author": "jrob",
+  "author": {
+    "email": "jroberts.g1ql8@simplelogin.com",
+    "name": "Jacob Roberts",
+    "url": "https://github.com/Jacob-Roberts"
+  },
+  "repository": {
+    "url": "https://github.com/Jacob-Roberts/yaml-alphabetize.git",
+    "type": "git"
+  },
   "license": "ISC",
   "dependencies": {
     "commander": "^11.0.0",
