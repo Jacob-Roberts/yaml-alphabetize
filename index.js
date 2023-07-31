@@ -1,6 +1,6 @@
-import yaml from "js-yaml";
-import fs from "fs";
-import { program } from "commander";
+const fs = require("fs");
+const yaml = require("js-yaml");
+const { program } = require("commander");
 
 program
   .name("yaml-alphabetize")

@@ -1,7 +1,7 @@
 {
   "name": "yaml-alphabetize",
-  "version": "0.0.1",
-  "type": "module",
+  "version": "0.0.2",
+  "type": "commonjs",
   "description": "Alphabetically sort a section of YAML",
   "bin": {
     "yaml-alphabetize": "./index.js"
