@@ -1,6 +1,8 @@
-const fs = require("fs");
-const yaml = require("js-yaml");
-const { program } = require("commander");
+#!/usr/bin/env node
+
+import { readFileSync, writeFileSync } from "fs";
+import { load, dump } from "js-yaml";
+import { program } from "commander";
 
 program
   .name("yaml-alphabetize")
@@ -38,12 +40,12 @@ try {
     console.debug("Alphabetizing " + path + " in " + fileName);
   }
 
-  let fileContents = fs.readFileSync(fileName, "utf8");
+  let fileContents = readFileSync(fileName, "utf8");
   if (!fileContents) {
     console.error("File not found");
     process.exit(1);
   }
-  let data = yaml.load(fileContents);
+  let data = load(fileContents);
   if (!data) {
     console.error("File unable to be parsed as yaml");
     process.exit(1);
@@ -82,12 +84,12 @@ try {
     }
   }
 
-  let yamlStr = yaml.dump(data);
+  let yamlStr = dump(data);
   if (output) {
     if (verbose) {
       console.log("Writing to " + output);
     }
-    fs.writeFileSync(output, yamlStr, "utf8");
+    writeFileSync(output, yamlStr, "utf8");
   } else {
     if (verbose) {
       console.log("Writing to stdout");
